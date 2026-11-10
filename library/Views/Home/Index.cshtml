@@ -3,13 +3,13 @@
 }
 
 <h1>Welcome to Library Hub</h1>
-<p>Manage your books and library members here.</p>
+<p>Manage your books, library members, loans and notes here.</p>
 
 <div class="row g-3 mt-3">
 
     <div class="col-md-6">
         <div class="content-panel">
-            <h3> Books</h3>
+            <h3>Books</h3>
             <p>View and manage your book collection.</p>
 
             <a asp-controller="Books" asp-action="Index"
@@ -24,6 +24,26 @@
 
             <a asp-controller="Members" asp-action="Index"
                class="btn btn-primary">View Members</a>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="content-panel">
+            <h3>Loans</h3>
+            <p>See who has borrowed a book, and return books.</p>
+
+            <a asp-controller="Loans" asp-action="Index"
+               class="btn btn-primary">View Loans</a>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="content-panel">
+            <h3>Notes</h3>
+            <p>View and manage the library notepad.</p>
+
+            <a asp-controller="Notes" asp-action="Index"
+               class="btn btn-primary">View Notes</a>
         </div>
     </div>
 
